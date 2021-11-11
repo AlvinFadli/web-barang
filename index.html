@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li id="title"><p>UTS ALVIN</p></li>
+        <li style="float: right">
+          <a class="nav-item" href="#data" id="item2">DATA BARANG</a>
+        </li>
+        <li style="float: right">
+          <a class="nav-item" href="#form" id="item1">FORM BARANG</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container" id="form">
+      <h3 id="main-title">Form Barang</h3>
+      <table id="inputData">
+        <tr id="tr">
+          <td id="td-label"><label for="id">Id</label></td>
+          <td id="td-input"><input type="text" id="id" /><br /></td>
+        </tr>
+        <tr id="tr">
+          <td id="td-label"><label for="nama">Nama Barang</label></td>
+          <td id="td-input"><input type="text" id="nama" /><br /></td>
+        </tr>
+        <tr id="tr">
+          <td id="td-label"><label for="stok">Stok</label></td>
+          <td id="td-input"><input type="number" id="stok" /><br /></td>
+        </tr>
+        <tr id="tr">
+          <td id="td-label"><label for="jenis">Jenis</label></td>
+          <td id="td-radio">
+            <form name="jenisBrg">
+               
+              <input type="radio" id="jenis" name="jenisBarang" value="Pcs" />
+                <label for="pieces">Pcs</label><br />
+               
+              <input type="radio" id="jenis" name="jenisBarang" value="Box" />
+                <label for="box">Box</label><br />
+               
+              <input type="radio" id="jenis" name="jenisBarang" value="Unit" />
+                <label for="unit">Unit</label>
+            </form>
+          </td>
+        </tr>
+        <tr id="tr">
+          <td id="td-label"><label for="harga">Harga</label></td>
+          <td id="td-input"><input type="number" id="harga" /><br /></td>
+        </tr>
+      </table>
+      <div id="buttons">
+        <button id="inputBtn" onclick="inputFunc()">INPUT</button>
+        <button id="clearBtn" onclick="clearFunc()">CLEAR</button>
+      </div>
+    </div>
+
+    <div class="container" id="data">
+      <h3 id="main-title">Data Barang</h3>
+      <div id="dataBarang">
+   
+        </div>
+      </table>
+      <br><br>
+      <div id="buttons">
+        <button id="deleteAll" onclick="deleteAll()">DELETE ALL</button>
+      </div>
+      <p style="text-align: center; font-style: italic; color: #5c6fa0;">Input data melalui form</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
